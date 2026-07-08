@@ -182,7 +182,7 @@ function walkCertChain(cert: tls.PeerCertificate): Array<{
     });
 
     // Walk up the chain
-    const issuerCert = (current as any).issuerCertificate;
+    const issuerCert: any = (current as any).issuerCertificate;
     if (!issuerCert || issuerCert === current) break;
     current = issuerCert;
   }
