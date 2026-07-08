@@ -1,0 +1,66 @@
+{
+  "name": "fingerprint-mcp",
+  "version": "0.1.0",
+  "description": "Universal digital fingerprinting MCP server — 100 tools for TCP/TLS/SSH/HTTP/DNS/WAF/IoT/SMTP/SMB fingerprinting, infrastructure topology, C2 detection, OSINT enrichment",
+  "type": "module",
+  "bin": {
+    "fingerprint-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "dev": "bun --watch run src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "fingerprint",
+    "fingerprinting",
+    "jarm",
+    "ja4",
+    "hassh",
+    "tls",
+    "ssl",
+    "http",
+    "dns",
+    "waf",
+    "cdn",
+    "favicon",
+    "banner-grab",
+    "osint",
+    "recon",
+    "pentest",
+    "red-team",
+    "c2-detection",
+    "honeypot",
+    "shodan",
+    "censys",
+    "cybersecurity",
+    "security",
+    "infosec",
+    "ai",
+    "ai-agent",
+    "claude",
+    "llm"
+  ],
+  "author": "Orhan Yildirim <contact@orhanyildirim.us> (https://orhanyildirim.us)",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/badchars/fingerprint-mcp.git"
+  },
+  "homepage": "https://www.npmjs.com/package/fingerprint-mcp",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "cheerio": "^1.0.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.10",
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,60 @@
+name: New Fingerprinting Technique
+description: Suggest a new fingerprinting technique or method
+title: "[Technique] "
+labels: ["enhancement", "new-technique"]
+
+body:
+  - type: input
+    id: technique-name
+    attributes:
+      label: Technique name
+      description: Name of the fingerprinting technique or method.
+      placeholder: "e.g., JA4 TLS Fingerprinting, HTTP/2 SETTINGS Frame Analysis"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which fingerprinting category does this technique belong to?
+      options:
+        - TCP
+        - TLS
+        - SSH
+        - HTTP
+        - DNS
+        - WAF
+        - OSINT
+        - Passive
+        - Active
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the fingerprinting technique and how it works.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-valuable
+    attributes:
+      label: Why is this valuable for fingerprinting?
+      description: What makes this technique useful for digital fingerprinting and identification?
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to documentation, research papers, or implementations.
+      placeholder: |
+        - https://example.com/technique-spec
+        - https://github.com/example/implementation
+    validations:
+      required: false

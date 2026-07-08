@@ -1,0 +1,36 @@
+# VHS Demo — fingerprint-mcp
+Output .github/demo.gif
+
+Set Shell "bash"
+Set FontSize 14
+Set Width 1000
+Set Height 600
+Set Theme "Catppuccin Mocha"
+Set Padding 20
+Set TypingSpeed 30ms
+
+# Show help
+Type `npx -y fingerprint-mcp --help`
+Sleep 300ms
+Enter
+Sleep 6s
+
+# Quick recon
+Type `npx -y fingerprint-mcp --tool recon '{"url":"https://example.com","depth":"quick"}'`
+Sleep 300ms
+Enter
+Sleep 6s
+
+# TLS scan
+Type `npx -y fingerprint-mcp --tool scan_tls '{"host":"example.com"}'`
+Sleep 300ms
+Enter
+Sleep 6s
+
+# List all techniques
+Type `npx -y fingerprint-mcp --list-all`
+Sleep 300ms
+Enter
+Sleep 6s
+
+Sleep 2s
